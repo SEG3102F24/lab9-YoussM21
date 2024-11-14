@@ -22,7 +22,7 @@ class WebSecurityConfig {
             .authorizeHttpRequests { auth ->
                 auth.anyRequest().authenticated()
             }
-            .httpBasic()
+            .httpBasic { basic ->}
 
         return http.build()
     }
